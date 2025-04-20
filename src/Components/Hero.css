@@ -1,0 +1,112 @@
+/* font-family */
+/* .titan-one-regular {
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body, html {
+    overflow-x: hidden;
+  }
+
+.hero_container {
+    width: 100%;
+    height: 100vh;
+    background-color: #0b3930;
+}
+
+.hero_header {
+    width: 100%;
+    max-width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    color: #ebbc6b;
+}
+
+.menu_icon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.menu_icon span {
+    font-size: 18px;
+    line-height: 1;
+    position: relative;
+    top: 1px; 
+    color: #ebbc6b;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.hero_logo h1 {
+    font-family: "Titan One", sans-serif;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 30px;
+    color: #ebbc6b;
+    font-weight: 200;
+}
+
+.social_icons {
+    display: flex;
+    gap: 20px;
+}
+
+.icon_circle {
+    width: 45px;
+    height: 45px;
+    background-color: #ebbc6b;
+    color: #113830;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.icon_circle:hover {
+    background-color: #ffffff;
+}
+
+
+
+@media(max-width: 768px) {
+    .hero_header {
+        height: 10vh; 
+        padding: 0 20px;
+    }
+
+    .hero_logo h1 {
+        font-size: 30px; 
+        margin-top: 15px;
+    }
+
+    .menu_icon span {
+        font-size: 14px; 
+    }
+
+    .icon_circle {
+        width: 35px; 
+        height: 35px;
+    }
+
+    .social_icons {
+        gap: 15px; 
+    }
+}
