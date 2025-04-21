@@ -4,10 +4,24 @@
     font-weight: 400;
     font-style: normal;
   }
+
+  .belanosima-regular {
+  font-family: "Belanosima", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.protest-strike-regular {
+  font-family: "Protest Strike", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 */
 
 
-@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Protest+Strike&family=Titan+One&display=swap');
+
 
 * {
     box-sizing: border-box;
@@ -23,6 +37,7 @@
     width: 100%;
     height: 100vh;
     background-color: #0b3930;
+    position: relative;
 }
 
 .hero_header {
@@ -60,6 +75,13 @@
     margin-top: 30px;
     color: #ebbc6b;
     font-weight: 200;
+    z-index: 9999;
+    position: absolute;
+    top: 1%;  
+    left: 50%;
+    transform: translateX(-50%); 
+    margin: 0; 
+    z-index: 10;
 }
 
 .social_icons {
@@ -85,16 +107,86 @@
 }
 
 
+.hero_content{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+}
+
+.hero_image{
+    width: 50%;
+    height: 100%;
+    order: 1;
+}
+
+.hero_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero_description {
+    width: 50%;
+    height: 100%;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: flex-start; 
+    padding: 40px; 
+    text-align: left;
+    gap: 20px; 
+}
+
+.hero_description h1{
+    font-family: "Protest Strike", sans-serif;
+    font-size: 70px;
+    font-weight: 200;
+    color: #f46045;
+}
+
+.hero_description p{
+    font-family: "Belanosima", sans-serif;
+    font-size: 30px;
+    margin-top: 20px;
+    color: #ebbc6b;
+}
+
+.hero_description h2{
+    margin-top: 20px;
+    font-family: "Protest Strike", sans-serif;
+    font-size: 40px;
+    font-weight: 200;
+    color: #f46045;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero_description h2::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; 
+    left: 0;
+    width: 0%; 
+    height: 3px;
+    background-color: #f46045;
+    transition: width 0.3s ease;
+}
+
+.hero_description h2:hover::after {
+    width: 100%; 
+}
 
 @media(max-width: 768px) {
+
     .hero_header {
         height: 10vh; 
         padding: 0 20px;
     }
 
     .hero_logo h1 {
-        font-size: 30px; 
-        margin-top: 15px;
+        font-size: 27px; 
+        margin-top: 1px;
     }
 
     .menu_icon span {
@@ -109,4 +201,41 @@
     .social_icons {
         gap: 15px; 
     }
+
+    .hero_content{
+        flex-direction: column;
+
+    }
+
+    .hero_image, .hero_description{
+        width: 100%;
+    }
+
+    .hero_image{
+        height: 35vh;
+        order: 2;
+    }
+
+    .hero_image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .hero_description{
+        height: auto;
+        background-color: #0b3930;
+        order: 1;
+    }
+
+    .hero_description h1{
+        font-size: 40px;
+    }
+
+    .hero_description p{
+        font-size: 22px;
+    }
+    
+
+
 }
