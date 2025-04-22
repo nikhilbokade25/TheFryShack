@@ -5,6 +5,7 @@ import About from './Components/About';
 import Products from './Components/Products';
 import Events from './Components/Events';
 import Subscribe from './Components/Subscribe';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Products/>
       <Events/>
       <Subscribe/>
+      <Footer/>
     </div>
   );
 }
