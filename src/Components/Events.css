@@ -80,7 +80,7 @@
 .event_info{
     width: 80%;
     height: 65%;
-    background-color: #303e29;
+    background-color: #113018;
     margin-top: 22px;
     display: flex;
     flex-direction: column;
@@ -91,7 +91,6 @@
 .event_image{
     width: 90%;
     height: 45%;
-    background-color: yellow;
     margin-top: 25px;
 }
 
@@ -144,12 +143,11 @@
 @media(max-width:768px){
     .event_container{
         height: auto;
-
+        padding-bottom: 30px;
     }
 
     .event_content{
         flex-direction: column;
-
     }
 
     .event_menu{
@@ -169,4 +167,9 @@
     .event_details h1{
         font-size: 32px;
     }
+
+    .event_info{
+        padding-bottom: 30px;
+    }
+
 }
