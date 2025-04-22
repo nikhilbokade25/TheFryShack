@@ -1,0 +1,172 @@
+.event_container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #07251f;
+}
+
+.event_content {
+    width: 90%;
+    height: 95%;
+    display: flex;
+}
+
+.event_menu {
+    width: 60%;
+    height: 100%;
+    text-align: left;
+    padding-left: 20px;
+    position: relative;
+}
+
+.event_menu h2 {
+    font-size: 80px;
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 200;
+    color: #f46045;
+}
+
+.first_hr {
+    margin-top: 35px;
+}
+
+.menu_item {
+    font-size: 45px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-family: "Belanosima", sans-serif;
+    color: #ebbc6b;
+    cursor: pointer;
+    display: flex; 
+    align-items: center; 
+    overflow: hidden; 
+}
+
+.menu_item:hover {
+    color: #f46045;
+}
+
+.item_tagline {
+    font-size: 20px;
+    color: white; 
+    margin-left: 15px; 
+    display: none; 
+}
+
+.menu_item:hover .item_tagline {
+    display: inline; 
+}
+
+.event_details{
+    width: 40%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.event_details h2{
+    font-size: 80px;
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 200;
+    color: #f46045;
+    margin-left: 20px;
+}
+
+.event_info{
+    width: 80%;
+    height: 65%;
+    background-color: #303e29;
+    margin-top: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.event_image{
+    width: 90%;
+    height: 45%;
+    background-color: yellow;
+    margin-top: 25px;
+}
+
+.event_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.event_description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event_description h1{
+    margin-top: 20px;
+    font-family: "Belanosima", sans-serif;
+    color: #ebbc6b;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.event_description p{
+    margin-top: 20px;
+    font-family: "Belanosima", sans-serif;
+    color: #ebbc6b;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.event_description button{
+    margin-top: 20px;
+    padding: 13px;
+    font-family: "Belanosima", sans-serif;
+    background-color: #ebbc6b;
+    font-size: 20px;
+    font-weight: 200;
+    border-radius: 22px;
+    border: 1px solid #ebbc6b;
+    color: #2b441c;
+}
+
+.event_description button:hover{
+    cursor: pointer;
+}
+
+
+@media(max-width:768px){
+    .event_container{
+        height: auto;
+
+    }
+
+    .event_content{
+        flex-direction: column;
+
+    }
+
+    .event_menu{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .menu_item{
+        align-items: center;
+    }
+
+    .event_details{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .event_details h1{
+        font-size: 32px;
+    }
+}
