@@ -4,7 +4,10 @@ import pizzaImg from "../Assets/pizzaImg.jpg";
 import burgerImg from "../Assets/burgerImg.jpg";
 import nachosImg from "../Assets/nachosImg.jpg";
 
+
 export default function Products() {
+
+
 
     return (
         <div className="product_container">
@@ -27,7 +30,7 @@ export default function Products() {
                         <img src={pizzaImg} alt='pizza'/>
                     </div>
                     <div className='product_text'>
-                        <h1>PIZZA</h1>
+                        <h1 >PIZZA</h1>
                         <p>Cheesy, crispy, and loaded with toppings.</p>
                     </div>
                 </div>

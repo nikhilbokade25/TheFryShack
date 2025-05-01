@@ -1,37 +1,15 @@
-/* font-family */
-/* .titan-one-regular {
-    font-family: "Titan One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  .belanosima-regular {
-  font-family: "Belanosima", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.protest-strike-regular {
-  font-family: "Protest Strike", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-*/
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Protest+Strike&family=Titan+One&display=swap');
-
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
-  
-  body, html {
+}
+
+body,
+html {
     overflow-x: hidden;
-  }
+}
 
 .hero_container {
     width: 100%;
@@ -62,7 +40,7 @@
     font-size: 18px;
     line-height: 1;
     position: relative;
-    top: 1px; 
+    top: 1px;
     color: #ebbc6b;
     font-weight: bold;
     letter-spacing: 1px;
@@ -77,10 +55,10 @@
     font-weight: 200;
     z-index: 9999;
     position: absolute;
-    top: 1%;  
+    top: 1%;
     left: 50%;
-    transform: translateX(-50%); 
-    margin: 0; 
+    transform: translateX(-50%);
+    margin: 0;
     z-index: 10;
 }
 
@@ -106,20 +84,19 @@
     background-color: #ffffff;
 }
 
-
-.hero_content{
+.hero_content {
     width: 100%;
     height: 85vh;
     display: flex;
 }
 
-.hero_image{
+.hero_image {
     width: 50%;
     height: 100%;
     order: 1;
 }
 
-.hero_image img{
+.hero_image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -131,28 +108,28 @@
     order: 2;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    align-items: flex-start; 
-    padding: 40px; 
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
     text-align: left;
-    gap: 20px; 
+    gap: 20px;
 }
 
-.hero_description h1{
+.hero_description h1 {
     font-family: "Protest Strike", sans-serif;
     font-size: 70px;
     font-weight: 200;
     color: #f46045;
 }
 
-.hero_description p{
+.hero_description p {
     font-family: "Belanosima", sans-serif;
     font-size: 30px;
     margin-top: 20px;
     color: #ebbc6b;
 }
 
-.hero_description h2{
+.hero_description h2 {
     margin-top: 20px;
     font-family: "Protest Strike", sans-serif;
     font-size: 40px;
@@ -165,77 +142,151 @@
 .hero_description h2::after {
     content: '';
     position: absolute;
-    bottom: -5px; 
+    bottom: -5px;
     left: 0;
-    width: 0%; 
+    width: 0%;
     height: 3px;
     background-color: #f46045;
     transition: width 0.3s ease;
 }
 
 .hero_description h2:hover::after {
-    width: 100%; 
+    width: 100%;
 }
 
-@media(max-width: 768px) {
+/* Styles for the Menu Dialog */
+.menu_dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #07251f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    color: #ebbc6b;
+}
 
+.menu_dialog .dialog_content {
+    background-color: #07251f;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;  /* Make content take up full dialog */
+    max-width: none;  /* Remove max width */
+    max-height: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: #ebbc6b;
+}
+
+.menu_dialog .close_button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    z-index: 1001; /* Ensure close button is above content */
+}
+
+.menu_dialog h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.menu_dialog ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1; /* Allow list to take up remaining space */
+    overflow-y: auto;  /* Make the list scrollable if needed */
+}
+
+.menu_dialog ul li {
+    margin-bottom: 25px;
+    text-align: center; 
+    padding-top: 20px;
+}
+
+.menu_dialog ul li a {
+    color: #ebbc6b;
+    text-decoration: none;
+    font-size: 34px;
+}
+
+.menu_dialog ul li a:hover {
+    color: #f46045;
+}
+
+.close_button{
+    color: #f46045;
+}
+
+.dialog_content h2{
+    color: #f46045;
+    font-size: 60px;
+}
+@media (max-width: 768px) {
     .hero_header {
-        height: 10vh; 
+        height: 10vh;
         padding: 0 20px;
     }
 
     .hero_logo h1 {
-        font-size: 27px; 
+        font-size: 27px;
         margin-top: 1px;
     }
 
     .menu_icon span {
-        font-size: 14px; 
+        font-size: 14px;
     }
 
     .icon_circle {
-        width: 35px; 
+        width: 35px;
         height: 35px;
     }
 
     .social_icons {
-        gap: 15px; 
+        gap: 15px;
     }
 
-    .hero_content{
+    .hero_content {
         flex-direction: column;
-
     }
 
-    .hero_image, .hero_description{
+    .hero_image,
+    .hero_description {
         width: 100%;
     }
 
-    .hero_image{
+    .hero_image {
         height: 35vh;
         order: 2;
     }
 
-    .hero_image img{
+    .hero_image img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
 
-    .hero_description{
+    .hero_description {
         height: auto;
         background-color: #0b3930;
         order: 1;
     }
 
-    .hero_description h1{
+    .hero_description h1 {
         font-size: 40px;
     }
 
-    .hero_description p{
+    .hero_description p {
         font-size: 22px;
     }
-    
-
-
 }

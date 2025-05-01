@@ -91,6 +91,7 @@
     .footer_section p {
         justify-content: center;
     }
+    
     .footer_section:nth-child(3) p {
         justify-content: space-between;
         width: 100%;
