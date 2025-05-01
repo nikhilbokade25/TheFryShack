@@ -4,7 +4,7 @@ export default function Menu() {
     return (
         <div className="menu_container">
             <div className="menu_row">
-                {/* Left Column - Pizza */}
+                
                 <div className="menu_category">
                     <h2>------- PIZZA -------</h2>
                     <p>Cheese Pizza <span>$10</span></p>
@@ -15,7 +15,7 @@ export default function Menu() {
                     <p>Spicy Paneer Pizza <span>$11</span></p>
                 </div>
 
-                {/* Right Column - Nachos */}
+               
                 <div className="menu_category">
                     <h2>------- NACHOS -------</h2>
                     <p>Classic Nachos <span>$7</span></p>
@@ -28,7 +28,7 @@ export default function Menu() {
             </div>
 
             <div className="menu_row">
-                {/* Left Column - Burgers */}
+                
                 <div className="menu_category">
                     <h2>------- BURGERS -------</h2>
                     <p>Classic Beef Burger <span>$11</span></p>
@@ -39,7 +39,7 @@ export default function Menu() {
                     <p>BBQ Burger <span>$11</span></p>
                 </div>
 
-                {/* Right Column - Fries */}
+               
                 <div className="menu_category">
                     <h2>------- FRIES -------</h2>
                     <p>Classic Fries <span>$4</span></p>
@@ -52,7 +52,7 @@ export default function Menu() {
             </div>
 
             <div className="menu_row_single">
-                {/* Centered Single Row - Milkshakes */}
+                
                 <div className="menu_category">
                     <h2>------- MILKSHAKES -------</h2>
                     <p>Vanilla Shake <span>$6</span></p>
