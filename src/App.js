@@ -7,7 +7,9 @@ import Subscribe from './Components/Subscribe';
 import Footer from './Components/Footer';
 import Menu from './Components/Menu';
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// App.js
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+
 
 function HomePage() {
   return (
