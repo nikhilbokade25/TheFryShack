@@ -1,6 +1,8 @@
 import './Footer.css';
+import { useNavigate } from 'react-router-dom';
 
 export default function Footer() {
+    const navigate = useNavigate();
     return (
         <div className="footer_container">
             <div className="footer_wrapper">
@@ -14,7 +16,7 @@ export default function Footer() {
                             <hr />
                             <p className='footer_menu_item'>News & Events</p>
                             <hr />
-                            <p className='footer_menu_item'>Menu</p>
+                            <p className='footer_menu_item' onClick={()=>navigate('/menu')}>Menu</p>
                             <hr />
                             <p className='footer_menu_item'>Order Online</p>
                             <hr />
