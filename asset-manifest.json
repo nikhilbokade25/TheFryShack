@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/TheFryShack/static/css/main.ec67bc61.css",
-    "main.js": "/TheFryShack/static/js/main.fcb7c3ce.js",
+    "main.js": "/TheFryShack/static/js/main.f3b8fc25.js",
     "static/js/453.a0296bee.chunk.js": "/TheFryShack/static/js/453.a0296bee.chunk.js",
     "static/media/burgerImg.jpg": "/TheFryShack/static/media/burgerImg.df231d16534011ed2b1b.jpg",
     "static/media/pizza.jpg": "/TheFryShack/static/media/pizza.c7ce36f4885a6bf42552.jpg",
@@ -12,11 +12,11 @@
     "static/media/subscribeImg.jpg": "/TheFryShack/static/media/subscribeImg.a9736f201a67be0fec62.jpg",
     "index.html": "/TheFryShack/index.html",
     "main.ec67bc61.css.map": "/TheFryShack/static/css/main.ec67bc61.css.map",
-    "main.fcb7c3ce.js.map": "/TheFryShack/static/js/main.fcb7c3ce.js.map",
+    "main.f3b8fc25.js.map": "/TheFryShack/static/js/main.f3b8fc25.js.map",
     "453.a0296bee.chunk.js.map": "/TheFryShack/static/js/453.a0296bee.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ec67bc61.css",
-    "static/js/main.fcb7c3ce.js"
+    "static/js/main.f3b8fc25.js"
   ]
 }
